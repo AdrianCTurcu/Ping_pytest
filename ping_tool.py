@@ -1,6 +1,6 @@
 import subprocess
 
-def ping(host="8.8.8.8"):
+def ping(host="127.0.0.1"):
     result = subprocess.run(
         ["ping", "-n", "4", host],
         capture_output=True,
