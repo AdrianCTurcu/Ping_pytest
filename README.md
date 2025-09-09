@@ -21,6 +21,7 @@ Approximate round trip times in milli-seconds:
 
 Ping OK
 
-![Ping](test_ping.jpg)
+![Ping](https://raw.githubusercontent.com/AdrianCTurcu/Ping_pytest/main/test_ping.jpg)
+
 
 
