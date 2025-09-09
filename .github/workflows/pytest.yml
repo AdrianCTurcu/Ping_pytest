@@ -10,26 +10,22 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-python@v5
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
       with:
         python-version: "3.13"
 
-    - name: Cache pip
-      uses: actions/cache@v4
-      with:
-        path: ~/.cache/pip
-        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements*.txt') }}
-        restore-keys: |
-          ${{ runner.os }}-pip-
-
-    - name: Install dependencies
+    - name: Install pytest
       run: |
         python -m pip install --upgrade pip
         pip install pytest
 
+    # Rulează DOAR testul pe localhost ca să meargă și în Actions
     - name: Run pytest (localhost only)
-        run: pytest -v test_ping.py::test_ping_localhost
-
+      run: pytest -v -k "test_ping_localhost"
