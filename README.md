@@ -1,3 +1,4 @@
+```
 # 🧪 Pytest Example Project
 
 Acest proiect este un exemplu minimal de testare în Python folosind **pytest**.
@@ -20,6 +21,7 @@ Approximate round trip times in milli-seconds:
     Minimum = 18ms, Maximum = 19ms, Average = 18ms
 
 Ping OK
+```
 
 ![Ping](https://raw.githubusercontent.com/AdrianCTurcu/Ping_pytest/main/test_ping.jpg)
 
