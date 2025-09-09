@@ -20,3 +20,5 @@ Approximate round trip times in milli-seconds:
     Minimum = 18ms, Maximum = 19ms, Average = 18ms
 
 Ping OK
+
+![](https://github.com/AdrianCTurcu/Ping_pytest/blob/main/ping_tool.py)
