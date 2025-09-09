@@ -1,3 +1,5 @@
+![Run Pytest](https://github.com/AdrianCTurcu/Ping_pytest/actions/workflows/pytest.yml/badge.svg)
+
 ```
 # 🧪 Pytest Example Project
 
